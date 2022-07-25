@@ -1,0 +1,100 @@
+body {
+    height: 100%;
+    background: linear-gradient(90deg, #68C2AF 50%, #424549 50%);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container h2{
+    color: white;
+}
+
+.discord, .guildy {
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    padding: 50px;
+}
+
+.brand-logo {
+    max-width: 35%;
+    height: auto;
+}
+
+.invite-button img {
+    max-width: 20%;
+    height: auto;
+    margin-top: 20%;
+    transition: 0.2s;
+}
+
+.invite-button img:hover {
+    max-width: 22%;
+}
+
+.pfp {
+    border-radius: 50%;
+}
+
+@media only screen and (orientation: portrait) and (max-width: 768px) {
+
+    body {
+        background: linear-gradient(0deg, #424549 50%, #68C2AF 50%) fixed no-repeat;
+    }
+    html {
+        height: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .discord, .guildy {
+        margin-top: 5px;
+        flex: 1;
+        height: 50%;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .brand-logo {
+        max-width: 50%;
+    }
+
+    .invite-button img {
+        max-width: 40%;
+        margin-top: 10%;
+    }
+
+    .invite-button img:hover {
+        max-width: 45%;
+    }
+
+  }
+
+@media only screen and (orientation: landscape) and (max-device-width : 1223px) {
+
+    .discord, .guildy {
+        padding: 10px;
+    }
+
+    .brand-logo {
+        max-width: 60%;
+    }
+
+    .invite-button img {
+        max-width: 40%;
+        margin-top: 5%;
+    }
+
+    .invite-button img:hover {
+        max-width: 42%;
+    }
+
+}
